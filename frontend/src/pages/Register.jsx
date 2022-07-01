@@ -36,7 +36,7 @@ function Register() {
   const onChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value,
+      [e.target.id]: e.target.value,
     }));
   };
 

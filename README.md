@@ -1,6 +1,6 @@
 # goals-app
 
-### About
+### About.
 
 #### Simple Goalsetter app to test the MERN Stack.
 

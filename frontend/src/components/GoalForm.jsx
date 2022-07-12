@@ -9,7 +9,6 @@ function GoalForm() {
 
   function onSubmit(e) {
     e.preventDefault();
-
     dispatch(createGoal({ text }));
     setText("");
   }

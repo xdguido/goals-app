@@ -29,15 +29,27 @@ const getGoals = async (token) => {
 };
 
 //update goals
-const updateGoal = async (userData) => {
-  const res = await axios.put(API_URL, userData);
+const updateGoal = async (id, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+
+  const res = await axios.put(API_URL + id, config);
 
   return res.data;
 };
 
 //delete goals
-const deleteGoal = async (userData) => {
-  const res = await axios.put(API_URL, userData);
+const deleteGoal = async (id, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+
+  const res = await axios.delete(API_URL + id, config);
 
   return res.data;
 };
